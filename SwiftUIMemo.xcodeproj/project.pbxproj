@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D0B4B32029A11B2E00886ADC /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4B31F29A11B2E00886ADC /* SwiftUIMemoApp.swift */; };
-		D0B4B32229A11B2E00886ADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4B32129A11B2E00886ADC /* ContentView.swift */; };
 		D0B4B32429A11B2F00886ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B4B32329A11B2F00886ADC /* Assets.xcassets */; };
 		D0B4B32729A11B2F00886ADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B4B32629A11B2F00886ADC /* Preview Assets.xcassets */; };
 		D0B4B32929A11B2F00886ADC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4B32829A11B2F00886ADC /* Persistence.swift */; };
 		D0B4B32C29A11B2F00886ADC /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0B4B32A29A11B2F00886ADC /* SwiftUIMemo.xcdatamodeld */; };
+		D0B4B33329A11C6D00886ADC /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4B33229A11C6D00886ADC /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0B4B31C29A11B2E00886ADC /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B4B31F29A11B2E00886ADC /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
-		D0B4B32129A11B2E00886ADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0B4B32329A11B2F00886ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B4B32629A11B2F00886ADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0B4B32829A11B2F00886ADC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D0B4B32B29A11B2F00886ADC /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
+		D0B4B33229A11C6D00886ADC /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 		D0B4B31E29A11B2E00886ADC /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0B4B33529A11C8A00886ADC /* Memory */,
+				D0B4B33429A11C8300886ADC /* CoreData */,
 				D0B4B31F29A11B2E00886ADC /* SwiftUIMemoApp.swift */,
-				D0B4B32129A11B2E00886ADC /* ContentView.swift */,
+				D0B4B33229A11C6D00886ADC /* MainListView.swift */,
 				D0B4B32329A11B2F00886ADC /* Assets.xcassets */,
-				D0B4B32829A11B2F00886ADC /* Persistence.swift */,
-				D0B4B32A29A11B2F00886ADC /* SwiftUIMemo.xcdatamodeld */,
 				D0B4B32529A11B2F00886ADC /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -71,6 +71,22 @@
 				D0B4B32629A11B2F00886ADC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0B4B33429A11C8300886ADC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D0B4B32829A11B2F00886ADC /* Persistence.swift */,
+				D0B4B32A29A11B2F00886ADC /* SwiftUIMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D0B4B33529A11C8A00886ADC /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B4B32929A11B2F00886ADC /* Persistence.swift in Sources */,
+				D0B4B33329A11C6D00886ADC /* MainListView.swift in Sources */,
 				D0B4B32C29A11B2F00886ADC /* SwiftUIMemo.xcdatamodeld in Sources */,
-				D0B4B32229A11B2E00886ADC /* ContentView.swift in Sources */,
 				D0B4B32029A11B2E00886ADC /* SwiftUIMemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
